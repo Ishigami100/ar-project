@@ -2,6 +2,11 @@ name: Check format.
 on:
   push:
 
+permissions:
+  actions: write
+  checks: write
+  contents: write
+
 jobs:
   Check-format:
     runs-on: ubuntu-latest
