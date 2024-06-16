@@ -2,76 +2,76 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-    "prettier",
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+    'prettier',
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs", "vite.config.js"],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js'],
   settings: {
     react: {
-      version: "detect",
+      version: 'detect',
     },
   },
-  parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh"],
+  parser: '@typescript-eslint/parser',
+  plugins: ['react-refresh'],
   rules: {
-    "react-refresh/only-export-components": [
-      "warn",
+    'react-refresh/only-export-components': [
+      'warn',
       { allowConstantExport: true },
     ],
   },
   rules: {
-    "react-refresh/only-export-components": [
-      "warn",
+    'react-refresh/only-export-components': [
+      'warn',
       { allowConstantExport: true },
     ],
-    "@typescript-eslint/naming-convention": [
-      "error",
+    '@typescript-eslint/naming-convention': [
+      'error',
       {
-        selector: "variable",
-        format: ["camelCase"],
+        selector: 'variable',
+        format: ['camelCase'],
       },
       {
-        selector: "function",
-        format: ["camelCase", "PascalCase"],
+        selector: 'function',
+        format: ['camelCase', 'PascalCase'],
       },
       {
-        selector: "parameter",
-        format: ["camelCase"],
+        selector: 'parameter',
+        format: ['camelCase'],
       },
       {
-        selector: "class",
-        format: ["PascalCase"],
+        selector: 'class',
+        format: ['PascalCase'],
       },
       {
-        selector: "method",
-        format: ["camelCase"],
+        selector: 'method',
+        format: ['camelCase'],
       },
       {
-        selector: "property",
-        format: ["camelCase"],
+        selector: 'property',
+        format: ['camelCase'],
       },
       {
-        selector: "interface",
-        format: ["PascalCase"],
+        selector: 'interface',
+        format: ['PascalCase'],
       },
       {
-        selector: "typeAlias",
-        format: ["PascalCase"],
+        selector: 'typeAlias',
+        format: ['PascalCase'],
       },
       {
-        selector: "typeParameter",
-        format: ["camelCase"],
+        selector: 'typeParameter',
+        format: ['camelCase'],
       },
       {
-        selector: "enum",
-        format: ["PascalCase"],
+        selector: 'enum',
+        format: ['PascalCase'],
       },
       {
-        selector: "enumMember",
-        format: ["UPPER_CASE"],
+        selector: 'enumMember',
+        format: ['UPPER_CASE'],
       },
     ],
   },
-};
+}
