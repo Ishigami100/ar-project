@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  Check format:
+  Check-format:
     runs-on: ubuntu-latest
 
     steps:
