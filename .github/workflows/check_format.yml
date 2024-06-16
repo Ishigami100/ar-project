@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  build:
+  Check format:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,6 +34,8 @@ jobs:
       - name: Add and commit changes
         if: env.changes == 'true'
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Apply Prettier fixes"
           git push
