@@ -28,3 +28,6 @@ dist-ssr
 
 # Docs (Optional):
 *.md
+
+# GitHub actions
+.github/workflows/*
