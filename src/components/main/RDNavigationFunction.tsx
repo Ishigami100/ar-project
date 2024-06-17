@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const RDNavigationFunction = () => {
   return (
@@ -10,9 +10,16 @@ const RDNavigationFunction = () => {
       <p>(パソコンからでも使用することができます。)</p>
       <p>※注意事項</p>
       <p>・サイトにアクセスした後、カメラを許可してください。</p>
-      <button type="button" onClick={() => window.location.href='https://www.kamlab-ninja-map.com/rd'}>RDナビゲーション機能へ</button>
+      <button
+        type="button"
+        onClick={() =>
+          (window.location.href = 'https://www.kamlab-ninja-map.com/rd')
+        }
+      >
+        RDナビゲーション機能へ
+      </button>
     </div>
-  );
-};
+  )
+}
 
-export default RDNavigationFunction;
+export default RDNavigationFunction

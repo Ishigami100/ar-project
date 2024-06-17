@@ -1,12 +1,12 @@
-import React from 'react';
-import Header from './components/main/Header';
-import MainContent from './components/main/MainContent';
-import CompassFunction from './components/main/CompassFunction';
-import RDNavigationFunction from './components/main/RDNavigationFunction';
-import PosterAudioFunction from './components/main/PosterAudioFunction';
-import AvatarGuideFunction from './components/main/AvatarGuideFunction';
-import Footer from './components/main/Footer';
-import './App.css';
+import React from 'react'
+import Header from './components/main/Header'
+import MainContent from './components/main/MainContent'
+import CompassFunction from './components/main/CompassFunction'
+import RDNavigationFunction from './components/main/RDNavigationFunction'
+import PosterAudioFunction from './components/main/PosterAudioFunction'
+import AvatarGuideFunction from './components/main/AvatarGuideFunction'
+import Footer from './components/main/Footer'
+import './App.css'
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <AvatarGuideFunction />
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
