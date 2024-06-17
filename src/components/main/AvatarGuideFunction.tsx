@@ -26,4 +26,4 @@ const avatarGuideFunction = () => {
   )
 }
 
-export default avatarGuideFunction;
+export default avatarGuideFunction

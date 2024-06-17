@@ -26,4 +26,4 @@ const compassFunction = () => {
   )
 }
 
-export default compassFunction;
+export default compassFunction
