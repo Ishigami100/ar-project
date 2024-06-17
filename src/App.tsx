@@ -6,7 +6,6 @@ import RDNavigationFunction from './components/main/RDNavigationFunction'
 import PosterAudioFunction from './components/main/PosterAudioFunction'
 import AvatarGuideFunction from './components/main/AvatarGuideFunction'
 import Footer from './components/main/Footer'
-import './App.css'
 
 const app = () => {
   return (
