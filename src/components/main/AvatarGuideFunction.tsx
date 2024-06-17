@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AvatarGuideFunction = () => {
+const avatarGuideFunction = () => {
   return (
     <div className="child4">
       <p>アバター案内機能</p>
@@ -26,4 +26,4 @@ const AvatarGuideFunction = () => {
   )
 }
 
-export default AvatarGuideFunction
+export default avatarGuideFunction;

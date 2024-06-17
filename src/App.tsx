@@ -8,7 +8,7 @@ import AvatarGuideFunction from './components/main/AvatarGuideFunction'
 import Footer from './components/main/Footer'
 import './App.css'
 
-const App = () => {
+const app = () => {
   return (
     <div className="App">
       <Header />
@@ -22,4 +22,4 @@ const App = () => {
   )
 }
 
-export default App
+export default app

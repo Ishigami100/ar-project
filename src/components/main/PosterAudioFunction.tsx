@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PosterAudioFunction = () => {
+const posterAudioFunction = () => {
   return (
     <div className="child3">
       <p>ポスター音声機能</p>
@@ -26,4 +26,4 @@ const PosterAudioFunction = () => {
   )
 }
 
-export default PosterAudioFunction
+export default posterAudioFunction

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+const footer = () => {
   return (
     <footer>
       アンケートにご協力ください。
@@ -16,4 +16,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default footer;

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../style.css'
 
-const Header = () => {
+const header = () => {
   return (
     <header className="header">
       <div className="navtext-container">
@@ -33,4 +33,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default header;

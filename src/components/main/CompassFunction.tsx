@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CompassFunction = () => {
+const compassFunction = () => {
   return (
     <div className="child1">
       <p>コンパス機能</p>
@@ -26,4 +26,4 @@ const CompassFunction = () => {
   )
 }
 
-export default CompassFunction
+export default compassFunction;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RDNavigationFunction = () => {
+const rdNavigationFunction = () => {
   return (
     <div className="child2">
       <p>RDナビゲーション機能</p>
@@ -22,4 +22,4 @@ const RDNavigationFunction = () => {
   )
 }
 
-export default RDNavigationFunction
+export default rdNavigationFunction
