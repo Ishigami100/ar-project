@@ -19,9 +19,6 @@ jobs:
         with:
           node-version: 20.13
 
-      - uses: reviewdog/action-setup@v1
-      - run: reviewdog -version
-
       - name: Install packages
         run: npm ci
 
