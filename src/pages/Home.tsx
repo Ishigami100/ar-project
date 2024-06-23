@@ -7,7 +7,7 @@ import PosterAudioFunction from '../components/main/PosterAudioFunction'
 import AvatarGuideFunction from '../components/main/AvatarGuideFunction'
 import Footer from '../components/main/Footer'
 
-const home = () => {
+const Home = () => {
   return (
     <div className="App">
       <Header />
@@ -21,4 +21,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
