@@ -28,8 +28,10 @@ jobs:
 
       - name: Lint
         id: lint
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm run lint || echo "lint_error=true" >> $GITHUB_ENV
+          npm run lint| reviewdog -reporter=github-pr-review -f=eslint || echo "lint_error=true" >> $GITHUB_ENV
 
       - name: suggester / eslint
         uses: reviewdog/action-suggester@v1
