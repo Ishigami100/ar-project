@@ -4,7 +4,7 @@ import Poster from '../pages/Poster'
 
 const appRoutes = () => {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/poster" element={<Poster />} />
