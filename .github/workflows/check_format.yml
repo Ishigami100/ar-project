@@ -6,6 +6,8 @@ permissions:
   actions: write
   checks: write
   contents: write
+  issues: write
+  pull-requests: write
 
 jobs:
   Check-format:
@@ -26,6 +28,14 @@ jobs:
 
       - name: Lint
         run: npm run lint
+
+      - name: Lint
+        run: npm run lint
+
+      - name: suggester / shfmt
+        uses: reviewdog/action-suggester@v1
+        with:
+          tool_name: eslint
 
       - name: Check for changes
         id: git_status
