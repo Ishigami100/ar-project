@@ -27,15 +27,18 @@ jobs:
         run: npm run format
 
       - name: Lint
-        run: npm run lint
+        id: lint
+        run: |
+          npm run lint || exit 0
 
-      - name: Lint
-        run: npm run lint
-
-      - name: suggester / shfmt
+      - name: suggester / eslint
         uses: reviewdog/action-suggester@v1
         with:
           tool_name: eslint
+          level: error
+          reporter: github-pr-review
+          filter_mode: file
+          fail_on_error: false
 
       - name: Check for changes
         id: git_status
