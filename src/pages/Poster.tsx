@@ -1,5 +1,5 @@
-const poster = () => {
+const Poster = () => {
   return <div className="App">あああ</div>
 }
 
-export default poster
+export default Poster
