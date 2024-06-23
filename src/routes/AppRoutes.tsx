@@ -3,8 +3,9 @@ import Home from '../pages/Home'
 import Poster from '../pages/Poster'
 
 const appRoutes = () => {
+  const basename = process.env.NODE_ENV === 'development' ? '/' : '/ar-project/';
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/poster" element={<Poster />} />
