@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: 20.13
 
+      - uses: reviewdog/action-setup@v1
+      - run: reviewdog -version
+
       - name: Install packages
         run: npm ci
 
@@ -29,13 +32,12 @@ jobs:
       - name: Lint
         id: lint
         run: |
-          npm run lint || echo "lint_error=true" >> $GITHUB_ENV
+           npm run lint | reviewdog -reporter=github-pr-review -f=eslint || echo "lint_error=true" >> $GITHUB_ENV
 
-      - name: reviewdog
-        if: always()
-        uses: reviewdog/action-eslint@v1
+      - name: suggester / eslint
+        uses: reviewdog/action-suggester@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tool_name: eslint
           level: error
           reporter: github-pr-review
           filter_mode: file
