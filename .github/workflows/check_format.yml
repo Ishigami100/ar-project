@@ -26,6 +26,11 @@ jobs:
       - name: Prettier
         run: npm run format
 
+      - name: Lint
+        id: lint
+        run: |
+          npm run lint || echo "lint_error=true" >> $GITHUB_ENV
+
       - name: reviewdog
         if: always()
         uses: reviewdog/action-eslint@v1
