@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import Poster from '../pages/Poster'
 
-const AppRoutes = () => {
+const appRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -13,4 +13,4 @@ const AppRoutes = () => {
   )
 }
 
-export default AppRoutes
+export default appRoutes
