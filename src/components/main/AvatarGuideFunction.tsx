@@ -1,5 +1,3 @@
-import React from 'react'
-
 const avatarGuideFunction = () => {
   return (
     <div className="child4">

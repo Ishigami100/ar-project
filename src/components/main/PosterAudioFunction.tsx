@@ -1,5 +1,3 @@
-import React from 'react'
-
 const posterAudioFunction = () => {
   return (
     <div className="child3">
