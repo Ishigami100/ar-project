@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../components/main/Header'
 import MainContent from '../components/main/MainContent'
 import CompassFunction from '../components/main/CompassFunction'

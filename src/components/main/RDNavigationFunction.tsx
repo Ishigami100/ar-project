@@ -1,5 +1,3 @@
-import React from 'react'
-
 const rdNavigationFunction = () => {
   return (
     <div className="child2">
