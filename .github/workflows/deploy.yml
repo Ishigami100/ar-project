@@ -36,9 +36,6 @@ jobs:
         with:
           node-version: 20.13
 
-      - name: Reviewdog setup
-        uses: reviewdog/action-setup@v1
-
       - name: Install dependencies
         run: npm install
 
