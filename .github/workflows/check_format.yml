@@ -29,7 +29,7 @@ jobs:
       - name: Lint
         id: lint
         run: |
-          npm run lint || exit 0
+          npm run lint || echo "lint_error=true" >> $GITHUB_ENV
 
       - name: suggester / eslint
         uses: reviewdog/action-suggester@v1
@@ -57,3 +57,7 @@ jobs:
           git add .
           git commit -m "Apply Prettier fixes"
           git push
+
+      - name: Fail if lint errors
+        if: env.lint_error == 'true'
+        run: exit 1
