@@ -26,6 +26,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build project
+        run: |
+          echo "GITHUB_PAGES=false" >> $GITHUB_ENV
+
       - name: Build
         run: npm ci && npm run build
 

@@ -3,7 +3,7 @@ import Home from '../pages/Home'
 import Poster from '../pages/Poster'
 
 const appRoutes = () => {
-  const basename = process.env.GITHUB_PAGES ? '/ar-project/' : ''
+  const basename = process.env.NODE_ENV === 'development' ? '/' : '/ar-project/'
   return (
     <BrowserRouter basename={basename}>
       <Routes>
