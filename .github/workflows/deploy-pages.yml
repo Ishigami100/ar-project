@@ -40,7 +40,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm ci && npm run build
+        run: npm ci && npm run build-pages
 
       - name: file
         run: ls
