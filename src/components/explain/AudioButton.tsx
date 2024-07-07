@@ -29,8 +29,8 @@ const AudioButton: React.FC<AudioButtonProps> = ({ id, position, text, audioSrc 
 
   return (
     <>
-      <a-plane ref={buttonRef} id={id} className="clickable" color="white" opacity="0.5" position={position} height="0.2" width="0.5" rotation="0 0 0"></a-plane>
-      <a-text value={text} position={`0.15 ${position.split(' ')[1]} 0`} height="0.8" width="2.0" rotation="0 0 0" color="#000000"></a-text>
+      <a-plane ref={buttonRef} id={id} className="clickable" color="white" opacity="0.5" position={position} height="0.2" width="0.5" rotation="0 0 90"></a-plane>
+      <a-text value={text} position={`0.15 ${position.split(' ')[1]} 0`} height="0.8" width="2.0" rotation="0 0 90" color="#000000"></a-text>
       <audio ref={audioRef} src={audioSrc}></audio>
     </>
   );
